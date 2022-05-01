@@ -1,4 +1,4 @@
-# Wordle Copilot
+# [Wordle Copilot](https://wordle-copilot-sync271.vercel.app/)
 
 ## How does it work?
 
