@@ -73,6 +73,7 @@ function Tiles({
 		<div className="row">
 			{tiles()}
 			<RefreshCw
+				className="reset"
 				onClick={() => {
 					setLetters([]);
 					setLetterColors([]);
@@ -80,7 +81,6 @@ function Tiles({
 					setAlphabet(alphabetDict);
 				}}
 				color="white"
-				style={{ padding: "0 .5rem", height: "7.5em", width: "3em" }}
 			/>
 		</div>
 	);
