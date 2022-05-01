@@ -1,5 +1,15 @@
-function Pill({ suggestion }: { suggestion: string }) {
-	return <div className="pill">{suggestion}</div>;
+function Pill({
+	suggestion,
+	setLetters,
+}: {
+	suggestion: string;
+	setLetters: CallableFunction;
+}) {
+	return (
+		<div className="pill" onClick={() => setLetters([...suggestion.split("")])}>
+			{suggestion}
+		</div>
+	);
 }
 
 export default Pill;
