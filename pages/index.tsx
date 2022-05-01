@@ -3,12 +3,13 @@ import Head from "next/head";
 import { useState } from "react";
 import Keyboard from "../components/Keyboard";
 import Tiles from "../components/Tiles";
+import { alphabetDict } from "../utils";
 
 const Home: NextPage = () => {
-	const defaultLetters = ["W", "O", "R", "D", "S"];
-	const defaultColors = ["#121213", "#121213", "#121213", "#121213", "#121213"];
-	const [letters, setLetters] = useState(defaultLetters);
-	const [letterColors, setLetterColors] = useState(defaultColors);
+	const [letters, setLetters] = useState([]);
+	const [letterColors, setLetterColors] = useState([]);
+	const [wordChecked, setWordChecked] = useState(false);
+	const [alphabet, setAlphabet] = useState(alphabetDict);
 	return (
 		<>
 			<Head>
@@ -19,10 +20,23 @@ const Home: NextPage = () => {
 				<div className="game">
 					<Tiles
 						letters={letters}
+						setLetters={setLetters}
 						letterColors={letterColors}
 						setLetterColors={setLetterColors}
+						alphabet={alphabet}
+						setAlphabet={setAlphabet}
+						wordChecked={wordChecked}
+						setWordChecked={setWordChecked}
 					/>
-					<Keyboard />
+					<Keyboard
+						letters={letters}
+						setLetters={setLetters}
+						wordChecked={wordChecked}
+						setWordChecked={setWordChecked}
+						alphabet={alphabet}
+						setAlphabet={setAlphabet}
+						setLetterColors={setLetterColors}
+					/>
 				</div>
 			</div>
 		</>
