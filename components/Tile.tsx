@@ -18,7 +18,7 @@ export default function Tile({
 			key={key}
 			style={{
 				backgroundColor: letterColor,
-				border: `.1rem solid ${true && "#818384"}`,
+				border: `.1rem solid ${letterColor || "#3a3b3c"}`,
 			}}>
 			{letter}
 		</div>

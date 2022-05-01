@@ -20,6 +20,7 @@ function Keyboard({
 	const row2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 	const row3 = ["Z", "X", "C", "V", "B", "N", "M"];
 	const checkWord = () => {
+		console.log(letters);
 		let actualWord = letters.join("").toLowerCase();
 		if (
 			wordleAnswers.includes(actualWord) ||

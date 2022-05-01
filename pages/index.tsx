@@ -44,7 +44,12 @@ const Home: NextPage = () => {
 						setLetterColors={setLetterColors}
 					/>
 				</div>
-				<PillContainer setLetters={setLetters} suggestions={suggestions} />
+				<PillContainer
+					setLetters={setLetters}
+					setLetterColors={setLetterColors}
+					setWordChecked={setWordChecked}
+					suggestions={suggestions}
+				/>
 			</div>
 		</>
 	);
