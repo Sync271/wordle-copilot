@@ -9,10 +9,11 @@ export default function PillContainer({
 	setLetterColors: CallableFunction;
 	setWordChecked: CallableFunction;
 }) {
-	function Pill({ suggestion }: { suggestion: string }) {
+	function Pill({ suggestion, key }: { suggestion: string; key: string }) {
 		return (
 			<div
 				className="pill"
+				key={key}
 				onClick={() => {
 					setLetterColors([]);
 					setWordChecked(false);
@@ -23,9 +24,9 @@ export default function PillContainer({
 		);
 	}
 	return (
-		<div className="pill-container">
+		<div className="pill-container" key="pill-container">
 			{suggestions.map((suggestion) => {
-				return <Pill suggestion={suggestion} />;
+				return <Pill key={suggestion} suggestion={suggestion} />;
 			})}
 		</div>
 	);

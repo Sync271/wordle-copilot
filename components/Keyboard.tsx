@@ -45,6 +45,7 @@ function Keyboard({
 					return (
 						<div
 							className="key"
+							key={key}
 							onClick={() => {
 								if (letters.includes(key) && wordChecked) return;
 								if (letters.length < 5) {
@@ -72,6 +73,7 @@ function Keyboard({
 					return (
 						<div
 							className="key"
+							key={key}
 							onClick={() => {
 								if (letters.includes(key) && wordChecked) return;
 								if (letters.length < 5) {
@@ -102,6 +104,7 @@ function Keyboard({
 					return (
 						<div
 							className="key"
+							key={key}
 							onClick={() => {
 								if (letters.includes(key) && wordChecked) return;
 								if (letters.length < 5) {
