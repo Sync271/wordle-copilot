@@ -1,6 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wordle Copilot
 
-## Getting Started
+## How does it work?
+
+1. You enter your guess on Wordle and then, you replicate the results you get from there on the copilot by entering your guess through the virtual keyboard and hit enter. Any words accepted by wordle are also valid here
+![image](https://user-images.githubusercontent.com/67158080/166160632-2bff502c-5e81-4dc2-b092-9a6ff899a0f0.png)
+
+2. Click on the tiles to mark perfect(green), present(yellow) and grey(absent).
+![image](https://user-images.githubusercontent.com/67158080/166160713-be311fad-6977-4785-94c0-77252778ad17.png)
+
+3. Click on the suggestion you like and try it on Wordle. Hit enter and repeat steps 1-3. The keyboard will keep track of all the absent leters but not the present and perfect letters, so you'll have to make them for each guess.
+![image](https://user-images.githubusercontent.com/67158080/166160820-2e79b873-ee34-4a8f-acfb-66b232de304d.png)
+ 
+## It's Not a Wordle Solver but a Copilot!
+It only helps you solve wordle by narrowing down on the possible words using the data it has recieved but you need to pick the right suggestions based on your previous guesses.
+
+## To Run Locally
 
 First, run the development server:
 
@@ -12,23 +26,4 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Your feedback and contributions are welcome!
